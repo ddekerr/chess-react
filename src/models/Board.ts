@@ -71,9 +71,6 @@ export class Board {
   private addPawns() {
     for (let i = 0; i < 8; i++) {
       new Pawn(this.getCell(1, i), Colors.BLACK);
-    }
-
-    for (let i = 0; i < 8; i++) {
       new Pawn(this.getCell(6, i), Colors.WHITE);
     }
   }
