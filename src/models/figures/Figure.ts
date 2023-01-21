@@ -26,7 +26,6 @@ export class Figure {
     this.logo = null;
     this.name = FigureNames.FIGURE;
     this.id = nanoid();
-    this.cell.figure = this;
   }
 
   canMove(target: Cell): Boolean {

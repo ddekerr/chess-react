@@ -6,6 +6,7 @@ import { Board } from "../models/Board";
 import CellComponent from "./CellComponent";
 import NumberComponent from "./NumberComponent";
 import LetterComponent from "./LetterComponent";
+import { FigureComponent } from "./FigureComponent";
 
 interface BoardProps {
   board: Board;
