@@ -1,7 +1,9 @@
-import React, { FC } from "react";
-import { Board } from "../models/Board";
-import CellComponent from "./CellComponent";
 import { nanoid } from "nanoid";
+import React, { FC } from "react";
+
+import { Board } from "../models/Board";
+
+import CellComponent from "./CellComponent";
 import NumberComponent from "./NumberComponent";
 import LetterComponent from "./LetterComponent";
 

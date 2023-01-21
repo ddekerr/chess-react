@@ -1,6 +1,5 @@
 import { FC } from "react";
-
-const letters = ["a", "b", "c", "d", "e", "f", "g", "h"];
+import coordinates from "../constants";
 
 interface LetterProps {
   position: string;
@@ -12,7 +11,7 @@ const LetterComponent: FC<LetterProps> = ({ position }) => {
       className="letter-row"
       style={position === "top" ? { top: -32 } : { bottom: -32 }}
     >
-      {letters.map((l) => (
+      {coordinates.x.map((l) => (
         <div key={l}>{l}</div>
       ))}
     </div>
