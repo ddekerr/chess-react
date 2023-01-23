@@ -6,7 +6,6 @@ import { Board } from "../models/Board";
 import CellComponent from "./CellComponent";
 import NumberComponent from "./NumberComponent";
 import LetterComponent from "./LetterComponent";
-import { FigureComponent } from "./FigureComponent";
 
 interface BoardProps {
   board: Board;
@@ -23,7 +22,7 @@ const BoardComponent: FC<BoardProps> = ({ board, setBoard }) => {
       {board.cells.map((row) => (
         <React.Fragment key={nanoid()}>
           {row.map((cell) => (
-            <CellComponent cell={cell} key={cell.id} />
+            <CellComponent cell={cell} key={cell.id} figures={board.figures} />
           ))}
         </React.Fragment>
       ))}
