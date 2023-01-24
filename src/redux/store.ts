@@ -1,10 +1,11 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
 import { boardReduser } from "./boardSlice";
 
 const store = configureStore({
   reducer: {
     board: boardReduser,
   },
+  middleware: getDefaultMiddleware({ serializableCheck: false }),
 });
 
 export default store;
